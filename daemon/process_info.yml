@@ -1,0 +1,9 @@
+- name: test2.py
+  monitor: "/bin/ps -ef | grep test.py | grep -v 'grep'"
+  command: "/usr/bin/python test.py"
+  describe: "the description about this record."
+
+- name: test1.py
+  monitor: "/bin/ps -ef | grep test1.py | grep -v 'grep'"
+  command: ["/usr/bin/python /home/lion/lab_for_py/daemon/test1.py -abcdef"]
+  describe: "the description about this record."
